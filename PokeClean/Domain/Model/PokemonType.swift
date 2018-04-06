@@ -1,0 +1,3 @@
+enum PokemonType {
+    case poison
+}
