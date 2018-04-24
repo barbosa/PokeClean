@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A81C9EC208FD50000A64CE3 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72022077FD480089DEF9 /* RxCocoa.framework */; };
+		9A81C9ED208FD50000A64CE3 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72022077FD480089DEF9 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		9A81C9EE208FD50000A64CE3 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72012077FD480089DEF9 /* RxSwift.framework */; };
+		9A81C9EF208FD50000A64CE3 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72012077FD480089DEF9 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		EC9C71C52077F8260089DEF9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C71C42077F8260089DEF9 /* AppDelegate.swift */; };
 		EC9C71C72077F8260089DEF9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C71C62077F8260089DEF9 /* ViewController.swift */; };
 		EC9C71CA2077F8260089DEF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC9C71C82077F8260089DEF9 /* Main.storyboard */; };
@@ -17,8 +21,6 @@
 		EC9C71F82077F92E0089DEF9 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C71F72077F92E0089DEF9 /* Pokemon.swift */; };
 		EC9C71FA2077F9F40089DEF9 /* PokemonType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C71F92077F9F40089DEF9 /* PokemonType.swift */; };
 		EC9C71FC2077FA860089DEF9 /* PokemonRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC9C71FB2077FA860089DEF9 /* PokemonRepository.swift */; };
-		EC9C72032077FD480089DEF9 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72012077FD480089DEF9 /* RxSwift.framework */; };
-		EC9C72042077FD480089DEF9 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9C72022077FD480089DEF9 /* RxCocoa.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,21 @@
 			remoteInfo = PokeClean;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A81C9F0208FD50000A64CE3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9A81C9EF208FD50000A64CE3 /* RxSwift.framework in Embed Frameworks */,
+				9A81C9ED208FD50000A64CE3 /* RxCocoa.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		EC9C71C12077F8260089DEF9 /* PokeClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokeClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,8 +81,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC9C72032077FD480089DEF9 /* RxSwift.framework in Frameworks */,
-				EC9C72042077FD480089DEF9 /* RxCocoa.framework in Frameworks */,
+				9A81C9EE208FD50000A64CE3 /* RxSwift.framework in Frameworks */,
+				9A81C9EC208FD50000A64CE3 /* RxCocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,6 +218,7 @@
 				EC9C71BE2077F8260089DEF9 /* Frameworks */,
 				EC9C71BF2077F8260089DEF9 /* Resources */,
 				EC9C72052077FD6E0089DEF9 /* ShellScript */,
+				9A81C9F0208FD50000A64CE3 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
