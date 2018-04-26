@@ -126,6 +126,31 @@
 			path = Error;
 			sourceTree = "<group>";
 		};
+		9A9028F9209221310096FEAA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				EC9C71CD2077F8260089DEF9 /* LaunchScreen.storyboard */,
+				EC9C71C82077F8260089DEF9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		9A9028FA2092216F0096FEAA /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EC9C71C62077F8260089DEF9 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		9A9028FB2092217D0096FEAA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				EC9C71CB2077F8260089DEF9 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		EC9C71B82077F8250089DEF9 = {
 			isa = PBXGroup;
 			children = (
@@ -150,15 +175,9 @@
 		EC9C71C32077F8260089DEF9 /* PokeClean */ = {
 			isa = PBXGroup;
 			children = (
-				EC9C71F42077F8B20089DEF9 /* Presentation */,
-				EC9C71F32077F8A80089DEF9 /* Domain */,
 				EC9C71F22077F8890089DEF9 /* Data */,
-				EC9C71C42077F8260089DEF9 /* AppDelegate.swift */,
-				EC9C71C62077F8260089DEF9 /* ViewController.swift */,
-				EC9C71C82077F8260089DEF9 /* Main.storyboard */,
-				EC9C71CB2077F8260089DEF9 /* Assets.xcassets */,
-				EC9C71CD2077F8260089DEF9 /* LaunchScreen.storyboard */,
-				EC9C71D02077F8260089DEF9 /* Info.plist */,
+				EC9C71F32077F8A80089DEF9 /* Domain */,
+				EC9C71F42077F8B20089DEF9 /* Presentation */,
 			);
 			path = PokeClean;
 			sourceTree = "<group>";
@@ -202,6 +221,11 @@
 		EC9C71F42077F8B20089DEF9 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				EC9C71D02077F8260089DEF9 /* Info.plist */,
+				EC9C71C42077F8260089DEF9 /* AppDelegate.swift */,
+				9A9028FB2092217D0096FEAA /* Assets */,
+				9A9028F9209221310096FEAA /* Storyboard */,
+				9A9028FA2092216F0096FEAA /* ViewController */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -562,7 +586,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PokeClean/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeClean/Presentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loadsmart.PokeClean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -580,7 +604,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = PokeClean/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PokeClean/Presentation/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.loadsmart.PokeClean;
 				PRODUCT_NAME = "$(TARGET_NAME)";
